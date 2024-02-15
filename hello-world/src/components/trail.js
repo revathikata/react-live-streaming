@@ -77,6 +77,8 @@ const Trail = () => {
  {/* Live Stream */}
  <button onClick={handleLiveStream}>Live Stream</button>
  <button onClick={() => navigate("/live")}>LiveStreaming</button>
+ <button onClick={() => navigate("/Liveclasses")}> live classes</button>
+ <button onClick={() => navigate("/ant")}> ant med</button>
       <BootstrapDialog
         onClose={handleLiveStreamClose}
         aria-labelledby="customized-dialog-title"

@@ -43,7 +43,7 @@ const Trail = () => {
           height='400px'
         />
         {/* Vid */}
-       <button onClick={handleClickOpen}>Video recorder</button>
+       <button className='btn btn-light m-2' onClick={handleClickOpen}>Video recorder</button>
        <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
@@ -75,10 +75,11 @@ const Trail = () => {
       </BootstrapDialog>
 {/* Live stream */}
  {/* Live Stream */}
- <button onClick={handleLiveStream}>Live Stream</button>
- <button onClick={() => navigate("/live")}>LiveStreaming</button>
- <button onClick={() => navigate("/Liveclasses")}> live classes</button>
- <button onClick={() => navigate("/ant")}> ant med</button>
+ <button className='btn btn-light m-2' onClick={handleLiveStream}>Live Stream</button>
+ <button className='btn btn-light m-2' onClick={() => navigate("/live")}>LiveStreaming</button>
+ <button className='btn btn-light m-2' onClick={() => navigate("/Liveclasses")}> live classes</button>
+ <button className='btn btn-light m-2' onClick={() => navigate("/ant")}> ant med</button>
+ <button className='btn btn-light m-2' onClick={() => navigate("/quiz")}> Quiz page</button>
       <BootstrapDialog
         onClose={handleLiveStreamClose}
         aria-labelledby="customized-dialog-title"

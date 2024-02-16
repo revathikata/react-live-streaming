@@ -8,6 +8,19 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Liveclasses from './components/liveclasses'
 import AntMedia from './components/antmedia'
 import ReactQuiz from './components/quiz/reactQuiz';
+import Wrapper from './components/calculator/wrapper';
+import Calculator from './components/calculator/calculator';
+import ButtonBox from './components/calculator/buttonBox';
+import Button from './components/calculator/button';
+import CalContext from './components/calculator/calContext';
+
+const btnValues =   [
+  ["c","x/-","%", "/"],
+  [7,8,9, "x"],
+  [4,5,6, "-"],
+  [1,2,3, "+"],
+  [0,".", "="]
+]
 function App() {
   return (
     <Router>
@@ -20,6 +33,16 @@ function App() {
           <Route path='/ant' element={<AntMedia />} />
           <Route path='quiz' element={<ReactQuiz />} />
         </Routes>
+        <CalContext >
+        <Wrapper>
+          <Calculator />
+          <ButtonBox>
+            {btnValues.flat().map((btn,i) => (
+              <Button value={btn} key={i}/>
+            ))}
+          </ButtonBox>
+        </Wrapper>
+        </CalContext>
     </div>
     </Router>
   );

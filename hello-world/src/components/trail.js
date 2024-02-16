@@ -78,7 +78,7 @@ const Trail = () => {
  <button className='btn btn-light m-2' onClick={handleLiveStream}>Live Stream</button>
  <button className='btn btn-light m-2' onClick={() => navigate("/live")}>LiveStreaming</button>
  <button className='btn btn-light m-2' onClick={() => navigate("/Liveclasses")}> live classes</button>
- <button className='btn btn-light m-2' onClick={() => navigate("/ant")}> ant med</button>
+ <button className='btn btn-light m-2' onClick={() => navigate("/ant")}> ant media</button>
  <button className='btn btn-light m-2' onClick={() => navigate("/quiz")}> Quiz page</button>
       <BootstrapDialog
         onClose={handleLiveStreamClose}

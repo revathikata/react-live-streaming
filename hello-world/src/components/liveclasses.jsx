@@ -37,6 +37,7 @@ const Liveclasses = () => {
         peer.destroy();
       }
     };
+    
   }, []);
   return (
     <div>

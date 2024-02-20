@@ -11,7 +11,7 @@ let[result, setResult] = useState(false)
     let Option2 = useRef(null)
     let Option3 = useRef(null)
     let Option4 = useRef(null)
-
+    
 let option_array = [Option1,Option2,Option3,Option4]
     const checkAns = (e, ans) =>{
         if(lock === false){

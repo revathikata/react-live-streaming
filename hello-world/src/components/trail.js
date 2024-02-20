@@ -20,9 +20,9 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     padding: theme.spacing(1),
   },
 }));
-const liveDialog = styled(Dialog)(({theme}) =>{
+// const liveDialog = styled(Dialog)(({theme}) =>{
 
-})
+// })
 const Trail = () => {
   const navigate = useNavigate();
   
@@ -80,6 +80,7 @@ const Trail = () => {
  <button className='btn btn-light m-2' onClick={() => navigate("/Liveclasses")}> live classes</button>
  <button className='btn btn-light m-2' onClick={() => navigate("/ant")}> ant media</button>
  <button className='btn btn-light m-2' onClick={() => navigate("/quiz")}> Quiz page</button>
+ <button className='btn btn-light m-2' onClick={() => navigate('lifeCycle')}> LifeCycle</button>
       <BootstrapDialog
         onClose={handleLiveStreamClose}
         aria-labelledby="customized-dialog-title"

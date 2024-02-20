@@ -13,7 +13,8 @@ import Calculator from './components/calculator/calculator';
 import ButtonBox from './components/calculator/buttonBox';
 import Button from './components/calculator/button';
 import CalContext from './components/calculator/calContext';
-
+import Game from './components/game/game'
+import LifeCycle from './components/lifecycle/lifecyle'
 const btnValues =   [
   ["c","x/-","%", "/"],
   [7,8,9, "x"],
@@ -32,6 +33,7 @@ function App() {
           <Route path='/liveclasses' element={<Liveclasses />} />
           <Route path='/ant' element={<AntMedia />} />
           <Route path='quiz' element={<ReactQuiz />} />
+          <Route path='lifeCycle' element= {<LifeCycle />} />
         </Routes>
         <CalContext >
         <Wrapper>
@@ -43,6 +45,7 @@ function App() {
           </ButtonBox>
         </Wrapper>
         </CalContext>
+        <Game />
     </div>
     </Router>
   );

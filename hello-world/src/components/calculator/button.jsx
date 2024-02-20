@@ -12,7 +12,6 @@ const getStyleName =btn =>{
 }
 const Button = ({value}) => {
   const {calc, setCalc} = useContext(CalcContext)
-  console.log(setCalc);
   // user click comma
   const commaClick =() =>{
 setCalc({
